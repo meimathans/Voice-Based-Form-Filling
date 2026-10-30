@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#09090b" stroke="#27272a" stroke-width="1.5" />
+  <!-- Center AI Node -->
+  <circle cx="32" cy="13" r="2" fill="#ffffff" />
+  <!-- Dynamic Audio / Voice Monogram Bars -->
+  <rect x="14" y="19" width="4" height="26" rx="2" fill="#ffffff" />
+  <rect x="22" y="24" width="4" height="16" rx="2" fill="#d4d4d8" />
+  <rect x="30" y="18" width="4" height="28" rx="2" fill="#ffffff" />
+  <rect x="38" y="24" width="4" height="16" rx="2" fill="#d4d4d8" />
+  <rect x="46" y="19" width="4" height="26" rx="2" fill="#ffffff" />
+</svg>

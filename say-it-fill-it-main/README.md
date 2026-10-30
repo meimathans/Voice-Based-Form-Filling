@@ -1,24 +1,26 @@
-# Say It Fill It
+# Say It Fill It (MozhiFill AI)
 
-create a application which converts voice to text and identify the details in the form and fill the respective details accordingy. create for languages english, tamil, and tanglish(english+tamil)
+MozhiFill AI is an intelligent multilingual voice form-filling platform that converts spoken voice to text, identifies personal and form details, and automatically fills the corresponding form fields. Supports English, தமிழ் (Tamil), and Tanglish (English + Tamil mixed speech).
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/91848f58-116f-4e88-b549-837a0e4c7605).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Features
+- **Voice-to-Form Filling:** Speak naturally in English, Tamil, or Tanglish to fill out web and document forms.
+- **Multilingual Support:** Handles regional phrasing, numbers, dates, addresses, and Tamil terminology accurately.
+- **Interactive Review:** Live transcript display with inline editing and one-click re-extraction.
+- **Form Hub & URL Support:** Pre-built template library and assisted external web form filling.
+- **Privacy First:** Client-side audio processing with zero audio retention.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Prerequisites: Node.js 20+
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
+```
+
+### Build & Test
+
+```sh
+npm run build
+npm test
 ```

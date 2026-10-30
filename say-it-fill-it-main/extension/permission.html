@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mozhifill</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #09090b;
+        color: #fafafa;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .card {
+        background-color: #18181b;
+        border: 1px solid #27272a;
+        border-radius: 16px;
+        padding: 36px 32px;
+        max-width: 480px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+      }
+      .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: #0d9488;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: white;
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+      p {
+        font-size: 13px;
+        color: #a1a1aa;
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+      .btn {
+        background-color: #ffffff;
+        color: #09090b;
+        border: none;
+        padding: 12px 24px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.2s;
+      }
+      .btn:hover {
+        background-color: #e4e4e7;
+      }
+      .status {
+        margin-top: 16px;
+        font-size: 12px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        display: none;
+      }
+      .status.success {
+        display: block;
+        background-color: rgba(16, 185, 129, 0.15);
+        border: 1px solid #059669;
+        color: #34d399;
+      }
+      .status.error {
+        display: block;
+        background-color: rgba(239, 68, 68, 0.15);
+        border: 1px solid #dc2626;
+        color: #f87171;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon-circle">
+        <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+        </svg>
+      </div>
+      <h1>Microphone Access</h1>
+      <p>
+        Chrome requires microphone permission to be granted in a tab once so the MozhiFill AI extension popup can listen to your voice when filling forms.
+      </p>
+      <button id="grant-btn" class="btn">Click to Allow Microphone</button>
+      <div id="status-box" class="status"></div>
+    </div>
+
+    <script src="permission.js"></script>
+  </body>
+</html>

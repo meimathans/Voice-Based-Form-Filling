@@ -1,10 +1,9 @@
-<!-- LOVABLE:BEGIN -->
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
+# MozhiFill AI Development Guidelines
+
+This project is an AI-powered voice-to-form filling application supporting English, தமிழ் (Tamil), and Tanglish (Tamil + English mixed speech).
+
+## Architecture
+- **Framework:** TanStack Start & TanStack Router
+- **UI:** React 19, Tailwind CSS v4, Radix UI, Lucide React
+- **AI Processing:** Google Gemini API (`GEMINI_API_KEY`) via `@google/genai` with fallback support
+- **Audio Processing:** Native Web Audio API WAV recorder

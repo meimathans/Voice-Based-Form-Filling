@@ -2,13 +2,13 @@ import { describe, expect, it } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Route } from "@/routes/index";
 
-describe("MozhiFill AI Form Interface", () => {
+describe("mozhifill Form Interface", () => {
   it("renders all 10 form fields correctly", () => {
     const Component = (Route as any).options?.component;
     expect(Component).toBeDefined();
     render(<Component />);
 
-    expect(screen.getAllByText("MozhiFill AI").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText("mozhifill").length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText("Full name")).toBeDefined();
     expect(screen.getByText("Age")).toBeDefined();
     expect(screen.getByText("Gender")).toBeDefined();
